@@ -5,7 +5,6 @@ module {
 }
 
 private import "atomic_types.mr"
-private import "conversions.mr"
 
 // Float operations
 
@@ -35,7 +34,6 @@ public node float_add => __engine_sim__float_add {
 public node float_subtract => __engine_sim__float_subtract {
     input __in0 [float];
     input __in1 [float];
-    alias output __out [float];
 }
 
 // String operations
